@@ -1202,7 +1202,7 @@ input, select, textarea {
 		justify-content: space-between;
 		position: relative;
 		min-height: 100vh;
-		width:auto;
+		width:fit-content;
 		padding: 4rem 2rem;
 		z-index: 3;
 	}
@@ -1557,8 +1557,9 @@ input, select, textarea {
 				-webkit-transform: translateY(0);
 				-ms-transform: translateY(0);
 				transform: translateY(0);
+				transition: transform 0.5s ease 0s, opacity 0.5s ease 0.5s;
 				width:auto;
-				max-width: fit-content;
+				max-width:auto;
 				opacity: 1;
 			}
 
