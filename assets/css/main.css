@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600"); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /*
 	Dimension by HTML5 UP
@@ -142,10 +143,35 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #ffffff;
-		font-family: "Source Sans Pro", sans-serif;
+		/* font-family: "Source Sans Pro", sans-serif; */
+		font-family: "Montserrat", sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.65;
+	}
+
+	button.accordion {
+		font-family: "Montserrat", sans-serif;
+		width: 100%;
+		white-space: pre-wrap;
+		height: auto;
+		line-height: 2;
+	}
+
+	.unit-style {
+		color: rgb(72, 132, 243);
+		font-weight: bold;
+	}
+
+	.c-her {
+		Color: rgba(38, 108, 238, 0.822);
+		font-weight: bold;
+		cursor:progress;
+		width: 100px;
+  	height: 100px
+		position: relative;
+  	animation: mymove 5s infinite;
+  	animation-delay: 2s;
 	}
 
 	a {
@@ -1196,13 +1222,15 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		-moz-justify-content: space-between;
+		/* -moz-justify-content: space-between;
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
-		justify-content: space-between;
+		justify-content: space-between; */
+		justify-content: center;
 		position: relative;
 		min-height: 100vh;
-		width:fit-content;
+		/* width:fit-content; */
+		width: 100%;
 		padding: 4rem 2rem;
 		z-index: 3;
 	}
@@ -1559,7 +1587,8 @@ input, select, textarea {
 				transform: translateY(0);
 				transition: transform 0.5s ease 0s, opacity 0.5s ease 0.5s;
 				width:auto;
-				max-width:auto;
+				/* max-width:auto; */
+				max-width: 800px;
 				opacity: 1;
 			}
 
