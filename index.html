@@ -34,40 +34,6 @@
 									 The site will be an active Journal that lists the work covered/ required durring the durration of My Msc Degree
 										Moreover, It will be constently changing as my aim is demonstrate my skill set as a developer as well.</p>
 
-										const RSS_URL = `https://feeds.feedburner.com/TheHackersNews`;
-
-										$.ajax(RSS_URL, {
-											accepts: {
-												xml: "application/rss+xml"
-											},
-										
-											dataType: "xml",
-										
-											success: function(data) {
-												$(data)
-													.find("item")
-													.each(function() {
-														const el = $(this);
-										
-														const template = `
-															<article>
-																<img src="${el.find("link").text()}/image/large.png" alt="">
-																<h2>
-																	<a href="${el
-																		.find("link")
-																		.text()}" target="_blank" rel="noopener">
-																		${el.find("title").text()}
-																	</a>
-																</h2>
-															</article>
-														`;
-										
-														document.body.insertAdjacentHTML("beforeend", template);
-													});
-											}
-										});
-
-
 							</div>
 						</div>
 						<nav>
@@ -725,9 +691,9 @@
 																													The discussion  lasted for 3 weeks, running into units 2 and 3 of the module. However, I have decided  to add it here in order to focus  on other deliverables per unit when they are required to be added. This was more of an organizational approach to things in terms of a layout to aid anyone that may be reading my e-portfolio. 
 
 																													<p> To read my initial post  <a href="https://1drv.ms/w/s!AswuPvgCIyWjuW65_hdW0eRRFhsr?e=CLLVBr"> "Click here" </a>
-																																<p> To check my first peer response <a href="https://1drv.ms/w/s!AswuPvgCIyWjuXLxornyLn_oHk74?e=pc6oZW"> "Click here" </a>
-																																			<p> To check my second peer response <a href="https://1drv.ms/w/s!AswuPvgCIyWjuXB_18_OCjw0c8-z?e=Xg0XpI"> "Click here" </a>
-																																						<p> For my third peer response <a href="https://1drv.ms/w/s!AswuPvgCIyWjuXSOPMSVXECbvLEG?e=xIdt32"> "Click here" </a>
+																																<p> To check my first peer response <a href="https://1drv.ms/w/s!AswuPvgCIyWjuXLxornyLn_oHk74?e=pc6oZW"> <span class="c-her">"Click here":</span> </a>
+																																			<p> To check my second peer response <a href="https://1drv.ms/w/s!AswuPvgCIyWjuXB_18_OCjw0c8-z?e=Xg0XpI"> "<span class="c-her">"Click here":</span> </a>
+																																						<p> For my third peer response <a href="https://1drv.ms/w/s!AswuPvgCIyWjuXSOPMSVXECbvLEG?e=xIdt32"> "<span class="c-her">"Click here":</span> </a>
 																																								
 
 																													</p>
@@ -760,8 +726,8 @@
 																						
 																						<p>Seminar 1 Prerp : STRIDE and DREAD Tools.</p>
 																						<p> we created a PPT and Kevin presented  it, I'll be attending as backup just in case.
-																							<a href="https://1drv.ms/p/s!AswuPvgCIyWjujxN_7oqr65FfwIk?e=8ZpKQK" > "Click here" to access the PPT file created and reviewed by the team </a>
-																							<a href="https://1drv.ms/w/s!AswuPvgCIyWjujslDJ5kb2UuQJ0O?e=z5AoW4" > "Click here" to access the word file which have all collaborated on </a>
+																							<a href="https://1drv.ms/p/s!AswuPvgCIyWjujxN_7oqr65FfwIk?e=8ZpKQK" > <span class="c-her">"Click here":</span> to access the PPT file created and reviewed by the team </a>
+																							<a href="https://1drv.ms/w/s!AswuPvgCIyWjujslDJ5kb2UuQJ0O?e=z5AoW4" > <span class="c-her">"Click here":</span> to access the word file which have all collaborated on </a>
 
 																							<p> DREAD and STRIDE are new to me, thus it made it worth while to learn them and apply them. I am beginning  to enjoy working with security risks and vulnerabilities, for the past few years, I have only worked with quantitative and qualitative analysis.</p>
 																						</p>
@@ -802,13 +768,13 @@
 																								<li>nslookup : to resolve DNS to IP</li>
 																								</ul>
 
-																								<a href="https://1drv.ms/w/s!AswuPvgCIyWjukJh3OzIDsjLkwAw?e=hrb1lh"  > Click here to Access my Basic scan's report</a> <hr>
-																								<a href="https://1drv.ms/w/s!AswuPvgCIyWjuj_AHQdM07Uk-zuY?e=0nORK2"  > Click here to Access my Advance scan's report</a> <hr>
-																								<a href="https://1drv.ms/u/s!AswuPvgCIyWjuVsaFYGRJ6UycqQ4?e=XSYQYa"  > Click here to Access a collection of Advance reprots such as ZAP and NMAP</a> <hr>
+																								<a href="https://1drv.ms/w/s!AswuPvgCIyWjukJh3OzIDsjLkwAw?e=hrb1lh"  > <span class="c-her">"Click here":</span> to Access my Basic scan's report</a> <hr>
+																								<a href="https://1drv.ms/w/s!AswuPvgCIyWjuj_AHQdM07Uk-zuY?e=0nORK2"  > <span class="c-her">"Click here":</span> to Access my Advance scan's report</a> <hr>
+																								<a href="https://1drv.ms/u/s!AswuPvgCIyWjuVsaFYGRJ6UycqQ4?e=XSYQYa"  > <span class="c-her">"Click here":</span> to Access a collection of Advance reprots such as ZAP and NMAP</a> <hr>
 
 
 																								<P> a video of some of my scans can be found below</P>
-																								<a href="https://1drv.ms/v/s!AswuPvgCIyWjukEogndMo4gVdgRP?e=mEh7uR"> Click here to download the video</a>
+																								<a href="https://1drv.ms/v/s!AswuPvgCIyWjukEogndMo4gVdgRP?e=mEh7uR"> <span class="c-her">"Click here":</span> to download the video</a>
 																								
 																								<p> For the video above, I have decided to remove the Iframe command since, it keeps redirecting the page to one drive and decided to keep it as a download link only</p>
 																								<p> I have had no difficulties in this unit, but my interest  in creating home labs for my self has grown, for now I have decided  to relay on VMware, Virtual box and Hyper-V for virtualization</p> <hr>
@@ -839,7 +805,7 @@
 
 																						<p>For this unit we have decided  that the initial post will be carried out by Ag's since the post will be on behalf of Group 1.
 
-																							<a href="https://1drv.ms/w/s!AswuPvgCIyWjs2O7bTGkeS-Moqm8?e=tVDj9N " > To access unit 4 reflection, please click here</a>
+																							<a href="https://1drv.ms/w/s!AswuPvgCIyWjs2O7bTGkeS-Moqm8?e=tVDj9N " > To access unit 4 reflection, please <span class="c-her">"Click here":</span></a>
 																						</p>
 																						
 
@@ -870,12 +836,12 @@
 																						<p>Seminar 3 Preparation</p>
 																						<p>We have been tasked to evaluate a set of applications used for scanning and vulnerability analysis, the team decided it would be best to carry out an individual evaluation and then meet to compare notes and agree on an evaluation table that can be presented on behalf of the team.</p>
 
-																						<a href="https://1drv.ms/w/s!AswuPvgCIyWjuke0gA5DooOxcFTD?e=5y0c3Q "> Click here for my individual  evaluation</a> <hr>
-																						<a href=" https://1drv.ms/w/s!AswuPvgCIyWjukbxhreSHrUa9SVJ?e=bDhYEp"> Click here for the teams evaluation</a> <hr>
+																						<a href="https://1drv.ms/w/s!AswuPvgCIyWjuke0gA5DooOxcFTD?e=5y0c3Q "> <span class="c-her">"Click here":</span> for my individual  evaluation</a> <hr>
+																						<a href=" https://1drv.ms/w/s!AswuPvgCIyWjukbxhreSHrUa9SVJ?e=bDhYEp"> <span class="c-her">"Click here":</span> for the teams evaluation</a> <hr>
 
 																						<p> I was tasked to create a PPT to be presented,  <a href="https://1drv.ms/p/s!AswuPvgCIyWjukjpC21XOoqjn33Q?e=rvWjtM" > Click here to access the PPT</a> </p> <hr>
 
-																						<a href="https://1drv.ms/w/s!AswuPvgCIyWjs2Rti-zeb6gBsmOR?e=aRGmVx"> Click here to access unit 5 reflections and notes</a> <br><hr>
+																						<a href="https://1drv.ms/w/s!AswuPvgCIyWjs2Rti-zeb6gBsmOR?e=aRGmVx"> <span class="c-her">"Click here":</span> to access unit 5 reflections and notes</a> <br><hr>
 
 
 																						
@@ -900,8 +866,8 @@
 																							<li>Submit the first part of your course assessment.</li>
 																							</ul>
 
-																						<p> Within this unit we have delivered the Design document, a copy of the design document can be found here <a href="https://1drv.ms/w/s!AswuPvgCIyWjuX0YfkZg5f-ApHvs?e=67AzaE" >here.</a></p> <hr>
-																						<p>To access my unit 6 reflection  <a href=" https://1drv.ms/w/s!AswuPvgCIyWjs2bVGWLhZTFB8hbt?e=QfA0La"> Please click here. </a>, these team tasks are getting fun and challenging. I am enjoying  working with both Ag's and Kevin.</p>
+																						<p> Within this unit we have delivered the Design document, a copy of the design document can be found here <a href="https://1drv.ms/w/s!AswuPvgCIyWjuX0YfkZg5f-ApHvs?e=67AzaE" ><span class="c-her">"Click here":</span></a></p> <hr>
+																						<p>To access my unit 6 reflection  <a href=" https://1drv.ms/w/s!AswuPvgCIyWjs2bVGWLhZTFB8hbt?e=QfA0La"> Please <span class="c-her">"Click here":</span>. </a>, these team tasks are getting fun and challenging. I am enjoying  working with both Ag's and Kevin.</p>
 																						<p> For the peer evaluation, the file has been submitted on the online porta, I have tried my best to remain fair and thought alot about evaluating my peers. This was not a fun activity nor something I look forward to doing again.</p> <hr>
 																						
 																					</div>
@@ -929,7 +895,7 @@
 																							<li>List common security standards and select the appropriate one(s) for a given situation.</li>
 																							</ul>
 
-																						<p>To access my Unit 7 reflections, Please click <a href="https://1drv.ms/w/s!AswuPvgCIyWjs2hfucLw5u8bavk2?e=qKBoKJ"> "here" </a></p> <hr>
+																						<p>To access my Unit 7 reflections, Please click <a href="https://1drv.ms/w/s!AswuPvgCIyWjs2hfucLw5u8bavk2?e=qKBoKJ"> <span class="c-her">"Click here":</span> </a></p> <hr>
 																						<p>I haven't completed the unit pre-prep seminar activity however, I started working with kail and different security operating systems. I am having many different Ideas involving my Final Thesis Project. I wish If I had someone to share them with.</p>
 
 																						
@@ -957,15 +923,15 @@
 																							</ul>
 
 																						
-																						<p>For unit 8 Reflection <a href="https://1drv.ms/w/s!AswuPvgCIyWjs2m436CRgyemxYPn?e=4AQ1rJ "> "Click here"</a></p> <hr>
+																						<p>For unit 8 Reflection <a href="https://1drv.ms/w/s!AswuPvgCIyWjs2m436CRgyemxYPn?e=4AQ1rJ "> <span class="c-her">"Click here":</span> </a></p> <hr>
 
 																						Within this part Discussion  3 has been completed; 
 																						<ul> 
-																							<li> My initial post can be found <a href="https://1drv.ms/w/s!AswuPvgCIyWjugQgUvQ-Yd5-n6Ks?e=5uYWca"> "Here" </a></li>
-																							<li> My Peer response post can be found <a href="https://1drv.ms/w/s!AswuPvgCIyWjughG2bR0tojsdgjW?e=2R79b2"> "Here" </a></li>
-																							<li> My Peer response post can be found <a href="https://1drv.ms/w/s!AswuPvgCIyWjugZMKzfNNelLL5D9?e=Ltwiaw"> "Here" </a></li>
+																							<li> My initial post can be found <a href="https://1drv.ms/w/s!AswuPvgCIyWjugQgUvQ-Yd5-n6Ks?e=5uYWca"> <span class="c-her">"Click here":</span> </a></li>
+																							<li> My Peer response post can be found <a href="https://1drv.ms/w/s!AswuPvgCIyWjughG2bR0tojsdgjW?e=2R79b2"> <span class="c-her">"Click here":</span> </a></li>
+																							<li> My Peer response post can be found <a href="https://1drv.ms/w/s!AswuPvgCIyWjugZMKzfNNelLL5D9?e=Ltwiaw"> <span class="c-her">"Click here":</span> </a></li>
 																							<li> My Peer response post can be found <a href="https://1drv.ms/w/s!AswuPvgCIyWjugJ_wBgudqZ2m-KL?e=0OcN5x"> "Here" </a></li>
-																							<li> My Summary post can be found <a href="https://1drv.ms/w/s!AswuPvgCIyWjuX8j2lyqHFRh3Q96?e=85l1NN"> "Here" </a></li>
+																							<li> My Summary post can be found <a href="https://1drv.ms/w/s!AswuPvgCIyWjuX8j2lyqHFRh3Q96?e=85l1NN"> <span class="c-her">"Click here":</span> </a></li>
 																						</ul>
 																						<hr>
 
@@ -995,8 +961,8 @@
 																							</ul>
 
 																					
-																						<p>For unit 9 Reflection <a href="https://1drv.ms/w/s!AswuPvgCIyWjuhucdiA-frH1_Mu-?e=yYMCe4"> "Click here" </a></p>
-																						<p>as most of us are gearing up for the final tasks, I have also reconducted some scan's on our website "Loadedwithstuff.co.uk" and it can be found <a href="https://1drv.ms/u/s!AswuPvgCIyWjuVonOYfiVfqRd5Y3?e=xRFtDq"> "here"</a></p> 
+																						<p>For unit 9 Reflection <a href="https://1drv.ms/w/s!AswuPvgCIyWjuhucdiA-frH1_Mu-?e=yYMCe4"> <span class="c-her">"Click here":</span> </a></p>
+																						<p>as most of us are gearing up for the final tasks, I have also reconducted some scan's on our website "Loadedwithstuff.co.uk" and it can be found <a href="https://1drv.ms/u/s!AswuPvgCIyWjuVonOYfiVfqRd5Y3?e=xRFtDq"> <span class="c-her">"Click here":</span></a></p> 
 																						
 																					</div>
 																					<br>
@@ -1021,9 +987,9 @@
 																							</ul>
 
 																						
-																							<p>To access my unit 10 reflection, Please click <a href="https://1drv.ms/w/s!AswuPvgCIyWjuh291J73Jih6mc9R?e=rsdeav"> "here"</a> <hr>
+																							<p>To access my unit 10 reflection, Please click <a href="https://1drv.ms/w/s!AswuPvgCIyWjuh291J73Jih6mc9R?e=rsdeav"> <span class="c-her">"Click here":</span></a> <hr>
 
-																								<p> within this unit we were assigned case studies and my LinkedIn  notes can be found <a href="https://1drv.ms/w/s!AswuPvgCIyWjuhRCisGFHuqaY3oZ?e=xLD0mu"> "here" </a> <hr>
+																								<p> within this unit we were assigned case studies and my LinkedIn  notes can be found <a href="https://1drv.ms/w/s!AswuPvgCIyWjuhRCisGFHuqaY3oZ?e=xLD0mu"> <span class="c-her">"Click here":</span> </a> <hr>
 																								
 
 																						
@@ -1048,7 +1014,7 @@
 																								<li>Explain the impact of emerging changes.</li>
 																								<li>Describe some challenges encountered with both current and new solutions.</li>
 																								</ul>
-																								<p> to access my Unit 11 Reflections, Please click <a href="https://1drv.ms/w/s!AswuPvgCIyWjuiCv5ueLBUS3GVUf?e=4htt70 ">"here"</a></p>
+																								<p> to access my Unit 11 Reflections, Please click <a href="https://1drv.ms/w/s!AswuPvgCIyWjuiCv5ueLBUS3GVUf?e=4htt70 "><span class="c-her">"Click here":</span> </a></p>
 																						
 																					</div>
 																					<br>
@@ -1072,7 +1038,7 @@
 																							<li>Reflect on the role of Information Security Management in modern computing solutions.</li>
 																							</ul>
 
-																							<p> to access my unit 12 Reflections, Please click <a href="https://1drv.ms/w/s!AswuPvgCIyWjuiP3sjvNqokbJr--?e=BuCaKr ">"here"</a></p> <hr> 
+																							<p> to access my unit 12 Reflections, Please click <a href="https://1drv.ms/w/s!AswuPvgCIyWjuiP3sjvNqokbJr--?e=BuCaKr "><span class="c-her">"Click here":</span> </a></p> <hr> 
 																						
 																						
 																					</div>
