@@ -142,7 +142,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #ffffff;
+		color: #383535;
 		/* font-family: "Source Sans Pro", sans-serif; */
 		font-family: "Montserrat", sans-serif;
 		font-weight: 300;
@@ -189,7 +189,8 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #ffffff;
+		color: #413c3cae;
+		font-family: "Montserrat";
 		font-weight: 600;
 	}
 
@@ -1485,6 +1486,7 @@ input, select, textarea {
 
 			#header .content p {
 				line-height: 1.875;
+				color: #ffffff;
 			}
 
 		}
@@ -1510,18 +1512,19 @@ input, select, textarea {
 
 					#header nav ul li {
 						border-left: 0;
-						border-top: solid 1px #ffffff;
+						border-top: solid 1px #434040;
 					}
 
 						#header nav ul li:first-child {
 							border-top: 0;
 						}
 
-						#header nav ul li a {
+						#header nav ul li  {
 							height: 3rem;
 							line-height: 3rem;
 							min-width: 0;
 							width: 100%;
+							color:#000000;
 						}
 
 				#header nav.use-middle:after {
